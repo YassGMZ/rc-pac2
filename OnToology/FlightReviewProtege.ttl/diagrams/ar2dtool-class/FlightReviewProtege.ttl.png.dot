@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Comment" "base:Traveller" "base:Flight" "base:Rating" "base:FlightReview" ; /*classes style*/
+	"base:FlightReview" -> "base:Rating" [ label = "base:has_Rating" ];
+	"base:FlightReview" -> "xsd:int" [ label = "base:has_id" ];
+	"base:FlightReview" -> "base:Comment" [ label = "base:has_Comment" ];
+	"base:FlightReview" -> "base:Flight" [ label = "base:has_flight" ];
+	"base:FlightReview" -> "base:Traveller" [ label = "base:has_Traveller" ];
+	"base:Comment" -> "xsd:int" [ label = "base:has_comment_verified" ];
+
+}

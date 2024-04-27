@@ -1,0 +1,262 @@
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an ontology about flight surveys"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The aircraft the traveller flight on in the review"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FList_of_civil_aircraft&sid=67858"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author> <http://www.w3.org/2000/01/rdf-schema#comment> "The author of the comment"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAuthor%21_Author%21&sid=67858"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body> <http://www.w3.org/2000/01/rdf-schema#comment> "The main text of the comment"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "the quality of the cabin staff service"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin Staff Service"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "The coment info"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country the traveller is from"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FSubdivision108674251&invfp=IFP_OFF&sas=SAME_AS_OFF&sid=67858"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date the comment was posted"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown> <http://www.w3.org/2000/01/rdf-schema#comment> "Date that the flight was flown"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown> <http://www.w3.org/2000/01/rdf-schema#label> "Date Flown"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Destination of the flight"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "All the info about the flight the review is writen of"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> <http://www.w3.org/2000/01/rdf-schema#comment> "main class"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> <http://www.w3.org/2000/01/rdf-schema#label> "FlightReview"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality of the onboard food"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages> <http://www.w3.org/2000/01/rdf-schema#label> "Food and Beverages"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "If the ground service was good"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Ground Service"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality of the inflight entertainment"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Entertainment"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "The origin of the flight"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "This rating includes all the subratings of the review"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "If the flight is recommended or not"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality of the seat comfort"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Comfort"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat that the traveller was seated in, the rank of it."@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Type"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title> <http://www.w3.org/2000/01/rdf-schema#comment> "The brief title of the comment"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "The traveller that posted the review"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> <http://www.w3.org/2000/01/rdf-schema#label> "Traveller"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of traveller like Family, Solo, Bussiness..."@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller> <http://www.w3.org/2000/01/rdf-schema#label> "Type of Traveller"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money> <http://www.w3.org/2000/01/rdf-schema#comment> "If the flight was good for the ammount of money paid"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money> <http://www.w3.org/2000/01/rdf-schema#label> "Value for Money"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "If the comment is verified as real or not."@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Verified"@en .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Rates the wifi and other connectivity quality"@en .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi and Connectivity"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified> "" .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Australia
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Canada
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Germany
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Qatar
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> .
+# 
+# http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/United_Kingdom
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
