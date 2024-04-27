@@ -1,0 +1,112 @@
+{
+  "@context" : {
+    "Inflight_Entertainment" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment"
+    },
+    "Seat_Comfort" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort"
+    },
+    "Verified" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified"
+    },
+    "has_flight" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+    },
+    "Comment" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended"
+    },
+    "Body" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body"
+    },
+    "Title" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination"
+    },
+    "Seat_Type" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type"
+    },
+    "has_Comment" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment",
+      "@type" : "@id"
+    },
+    "Date_Flown" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin"
+    },
+    "has_id" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Date" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date"
+    },
+    "Traveller" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller"
+    },
+    "has_Traveller" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller",
+      "@type" : "@id"
+    },
+    "Wifi_and_Connectivity" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity"
+    },
+    "Ground_Service" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service"
+    },
+    "has_Rating" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating",
+      "@type" : "@id"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+    },
+    "FlightReview" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft"
+    },
+    "Cabin_Staff_Service" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+    },
+    "Author" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Value_for_Money" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money"
+    },
+    "has_comment_verified" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Type_of_Traveller" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller"
+    },
+    "Food_and_Beverages" : {
+      "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages"
+    }
+  }
+}

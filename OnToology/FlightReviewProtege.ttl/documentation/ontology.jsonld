@@ -1,0 +1,463 @@
+[ {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an ontology about flight surveys"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The aircraft the traveller flight on in the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FList_of_civil_aircraft&sid=67858"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Australia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The author of the comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAuthor%21_Author%21&sid=67858"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The main text of the comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Cabin_Staff_Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the quality of the cabin staff service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cabin Staff Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Canada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The coment info"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country the traveller is from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FSubdivision108674251&invfp=IFP_OFF&sas=SAME_AS_OFF&sid=67858"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date the comment was posted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Date_Flown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date that the flight was flown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date Flown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Destination of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "All the info about the flight the review is writen of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "main class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Food_and_Beverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The quality of the onboard food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Food and Beverages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Ground_Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the ground service was good"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ground Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Inflight_Entertainment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The quality of the inflight entertainment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inflight Entertainment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The origin of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Qatar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This rating includes all the subratings of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the flight is recommended or not"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Comfort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The quality of the seat comfort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Seat Comfort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Seat_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Seat that the traveller was seated in, the rank of it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Seat Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The brief title of the comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The traveller that posted the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Type_of_Traveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of traveller like Family, Solo, Bussiness..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Type of Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/United_Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Value_for_Money",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the flight was good for the ammount of money paid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Value for Money"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the comment is verified as real or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Wifi_and_Connectivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rates the wifi and other connectivity quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wifi and Connectivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_Traveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Traveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_comment_verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/has_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Food_and_Beverages" "base:Type_of_Traveller" "base:Ground_Service" "base:Recommended" "base:Body" "base:Wifi_and_Connectivity" "base:Seat_Type" "base:Seat_Comfort" "base:Date" "base:Title" "base:Value_for_Money" "base:Comment" "base:Origin" "base:Verified" "base:Traveller" "base:Inflight_Entertainment" "base:Country" "base:Aircraft" "base:Flight" "base:Date_Flown" "base:Rating" "base:Cabin_Staff_Service" "base:FlightReview" "base:Destination" "base:Author" ; /*classes style*/
+	"base:Seat_Type" -> "base:Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "base:Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Cabin_Staff_Service" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Wifi_and_Connectivity" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Recommended" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Ground_Service" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Date" -> "base:Comment" [ label = "rdfs:subClassOf" ];
+	"base:Food_and_Beverages" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Body" -> "base:Comment" [ label = "rdfs:subClassOf" ];
+	"base:Rating" -> "base:FlightReview" [ label = "rdfs:subClassOf" ];
+	"base:Value_for_Money" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Traveller" -> "base:FlightReview" [ label = "rdfs:subClassOf" ];
+	"base:Comment" -> "base:FlightReview" [ label = "rdfs:subClassOf" ];
+	"base:Type_of_Traveller" -> "base:Traveller" [ label = "rdfs:subClassOf" ];
+	"base:Date_Flown" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Flight" -> "base:FlightReview" [ label = "rdfs:subClassOf" ];
+	"base:Verified" -> "base:Comment" [ label = "rdfs:subClassOf" ];
+	"base:Inflight_Entertainment" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Destination" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Title" -> "base:Comment" [ label = "rdfs:subClassOf" ];
+	"base:Author" -> "base:Comment" [ label = "rdfs:subClassOf" ];
+	"base:Seat_Comfort" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Origin" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+
+}
