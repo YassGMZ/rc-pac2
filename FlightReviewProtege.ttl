@@ -1,0 +1,284 @@
+@prefix : <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey/> .
+
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey> rdf:type owl:Ontology ;
+                                                                  rdfs:comment "This is an ontology about flight surveys"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_Comment
+:has_Comment rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ;
+             rdfs:domain :FlightReview ;
+             rdfs:range :Comment .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_Rating
+:has_Rating rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :FlightReview ;
+            rdfs:range :Rating .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_Traveller
+:has_Traveller rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ;
+               rdfs:domain :FlightReview ;
+               rdfs:range :Traveller .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_flight
+:has_flight rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :FlightReview ;
+            rdfs:range :Flight .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_comment_verified
+:has_comment_verified rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Comment ;
+                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#has_id
+:has_id rdf:type owl:DatatypeProperty ;
+        rdfs:domain :FlightReview ;
+        rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight ;
+          rdfs:comment "The aircraft the traveller flight on in the review"@en ;
+          rdfs:label "Aircraft"@en ;
+          rdfs:sameAs "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FList_of_civil_aircraft&sid=67858"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Comment ;
+        rdfs:comment "The author of the comment"@en ;
+        rdfs:label "Author"@en ;
+        rdfs:sameAs "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FAuthor%21_Author%21&sid=67858"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Body
+:Body rdf:type owl:Class ;
+      rdfs:subClassOf :Comment ;
+      rdfs:comment "The main text of the comment"@en ;
+      rdfs:label "Body"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Cabin_Staff_Service
+:Cabin_Staff_Service rdf:type owl:Class ;
+                     rdfs:subClassOf :Rating ;
+                     rdfs:comment "the quality of the cabin staff service"@en ;
+                     rdfs:label "Cabin Staff Service"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:subClassOf :FlightReview ;
+         rdfs:comment "The coment info"@en ;
+         rdfs:label "Comment"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Traveller ;
+         rdfs:comment "Country the traveller is from"@en ;
+         rdfs:label "Country"@en ;
+         rdfs:sameAs "https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FSubdivision108674251&invfp=IFP_OFF&sas=SAME_AS_OFF&sid=67858"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Date
+:Date rdf:type owl:Class ;
+      rdfs:subClassOf :Comment ;
+      rdfs:comment "The date the comment was posted"@en ;
+      rdfs:label "Date"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Date_Flown
+:Date_Flown rdf:type owl:Class ;
+            rdfs:subClassOf :Flight ;
+            rdfs:comment "Date that the flight was flown"@en ;
+            rdfs:label "Date Flown"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Destination
+:Destination rdf:type owl:Class ;
+             rdfs:subClassOf :Flight ;
+             rdfs:comment "Destination of the flight"@en ;
+             rdfs:label "Destination"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf :FlightReview ;
+        rdfs:comment "All the info about the flight the review is writen of"@en ;
+        rdfs:label "Flight"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#FlightReview
+:FlightReview rdf:type owl:Class ;
+              rdfs:comment "main class"@en ;
+              rdfs:label "FlightReview"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Food_and_Beverages
+:Food_and_Beverages rdf:type owl:Class ;
+                    rdfs:subClassOf :Rating ;
+                    rdfs:comment "The quality of the onboard food"@en ;
+                    rdfs:label "Food and Beverages"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Ground_Service
+:Ground_Service rdf:type owl:Class ;
+                rdfs:subClassOf :Rating ;
+                rdfs:comment "If the ground service was good"@en ;
+                rdfs:label "Ground Service"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Inflight_Entertainment
+:Inflight_Entertainment rdf:type owl:Class ;
+                        rdfs:subClassOf :Rating ;
+                        rdfs:comment "The quality of the inflight entertainment"@en ;
+                        rdfs:label "Inflight Entertainment"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf :Flight ;
+        rdfs:comment "The origin of the flight"@en ;
+        rdfs:label "Origin"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :FlightReview ;
+        rdfs:comment "This rating includes all the subratings of the review"@en ;
+        rdfs:label "Rating"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "If the flight is recommended or not"@en ;
+             rdfs:label "Recommended"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Seat_Comfort
+:Seat_Comfort rdf:type owl:Class ;
+              rdfs:subClassOf :Rating ;
+              rdfs:comment "The quality of the seat comfort"@en ;
+              rdfs:label "Seat Comfort"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Seat_Type
+:Seat_Type rdf:type owl:Class ;
+           rdfs:subClassOf :Traveller ;
+           rdfs:comment "Seat that the traveller was seated in, the rank of it."@en ;
+           rdfs:label "Seat Type"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Title
+:Title rdf:type owl:Class ;
+       rdfs:subClassOf :Comment ;
+       rdfs:comment "The brief title of the comment"@en ;
+       rdfs:label "Title"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Traveller
+:Traveller rdf:type owl:Class ;
+           rdfs:subClassOf :FlightReview ;
+           rdfs:comment "The traveller that posted the review"@en ;
+           rdfs:label "Traveller"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Type_of_Traveller
+:Type_of_Traveller rdf:type owl:Class ;
+                   rdfs:subClassOf :Traveller ;
+                   rdfs:comment "Type of traveller like Family, Solo, Bussiness..."@en ;
+                   rdfs:label "Type of Traveller"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Value_for_Money
+:Value_for_Money rdf:type owl:Class ;
+                 rdfs:subClassOf :Rating ;
+                 rdfs:comment "If the flight was good for the ammount of money paid"@en ;
+                 rdfs:label "Value for Money"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Verified
+:Verified rdf:type owl:Class ;
+          rdfs:subClassOf :Comment ;
+          rdfs:comment "If the comment is verified as real or not."@en ;
+          rdfs:label "Verified"@en .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Wifi_and_Connectivity
+:Wifi_and_Connectivity rdf:type owl:Class ;
+                       rdfs:subClassOf :Rating ;
+                       rdfs:comment "Rates the wifi and other connectivity quality"@en ;
+                       rdfs:label "Wifi and Connectivity"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Australia
+:Australia rdf:type owl:NamedIndividual ,
+                    :Country .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Canada
+:Canada rdf:type owl:NamedIndividual ,
+                 :Country .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#Qatar
+:Qatar rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#United_Kingdom
+:United_Kingdom rdf:type owl:NamedIndividual ,
+                         :Country .
+
+
+###  http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0
+<http://www.semanticweb.org/yass/ontologies/2024/3/flightSurvey#0> rdf:type owl:NamedIndividual ,
+                                                                            :Verified ;
+                                                                   :has_comment_verified "" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
